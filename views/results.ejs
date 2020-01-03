@@ -1,6 +1,12 @@
 <h1>This is a result page!</h1>
-<% data.Search.forEach(Movie => { %>
-    <li>
-        <%= Movie.Title%>
-    </li>
-    <% });%>
+<ul>
+    <% data.Search.forEach(Movie => { %>
+
+        <li>
+            <strong><%= Movie.Title%></strong> -
+            <%= Movie.Year%>
+        </li>
+        <% });%>
+</ul>
+
+<a href="/">Search again</a>
